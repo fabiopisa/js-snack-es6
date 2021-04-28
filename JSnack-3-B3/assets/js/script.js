@@ -1,15 +1,15 @@
 $(document).ready(function(){
-  var arrLetters = [
+  let arrLetters = [
     "a","b","c"
   ];
-  var arrNumbers = [
+  let arrNumbers = [
     1,2,3
   ];
-  var arrFusion = [];
+  let arrFusion = [];
 
-  for(var i = 0; i < (arrLetters.length && arrNumbers.length); i++){
-    var itemText = arrLetters[i];
-    var item = arrNumbers[i]; 
+  for(let i = 0; i < (arrLetters.length && arrNumbers.length); i++){
+    let itemText = arrLetters[i];
+    let item = arrNumbers[i]; 
 
     console.log(itemText);
     console.log(item);

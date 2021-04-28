@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  var limit = 15;
-  var sommaSmall = 0;
-  var sommaLong = 0;
-  var arrLong = [];
-  var arrSmall = [];
-  var arrCourgettes = [
+  let limit = 15;
+  let sommaSmall = 0;
+  let sommaLong = 0;
+  let arrLong = [];
+  let arrSmall = [];
+  let arrCourgettes = [
     {
       varietà : "verde chiaro",
       peso : 2,
@@ -58,11 +58,11 @@ $(document).ready(function(){
     
   ];
 
-  for(var courgette of arrCourgettes){
+  for(let courgette of arrCourgettes){
     if(courgette['lunghezza'] >= limit ){
       arrLong.push(courgette)
       console.log("long");
-      for(var key in courgette){
+      for(let key in courgette){
         console.log(key + ": " + courgette[key]);
       }
       console.log("--------------------");
@@ -70,7 +70,7 @@ $(document).ready(function(){
     }else{
       arrSmall.push(courgette);
       console.log("small");
-      for(var key in courgette){
+      for(let key in courgette){
         console.log(key + ": " + courgette[key]);
       }
       console.log("--------------------");

@@ -22,6 +22,5 @@ $(document).ready(function(){
   ///funzioni
   console.log(arrOne);
   console.log(arrTwo);
-
   
 })

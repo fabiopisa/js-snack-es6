@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var arrCourgettes = [
+  let arrCourgettes = [
     {
       varietà : "verde chiaro",
       peso : 2,
@@ -52,10 +52,10 @@ $(document).ready(function(){
     },
     
   ];
-  var somma = 0;
+  let somma = 0;
 
-  for(var courgette of arrCourgettes){
-    for(var key in courgette){
+  for(let courgette of arrCourgettes){
+    for(let key in courgette){
       console.log(key + ": " + courgette[key]);
     }
     console.log("-------------------------------");
