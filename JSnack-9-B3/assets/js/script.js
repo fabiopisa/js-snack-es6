@@ -41,10 +41,16 @@ $(document).ready(function(){
     },
   ];
   
-  let arrAdults = arrPeople.filter((person) => person.eta >= 18);
   
-  const arrAdultsDefinitive = arrAdults.map((person) => {
-    let str = (person.nome + " " + person.cognome + " può guidare la macchina")
+  
+  const arrAdultsDefinitive = arrPeople.map((person) => {
+    let str = "";
+    if(person.eta >= 18){
+      str = (person.nome + " " + person.cognome + " può guidare la macchina");
+    }else{
+      str = (person.nome + " " + person.cognome + " non può guidare la macchina");
+    }
+     
     return str
   });
   console.log(arrAdultsDefinitive);

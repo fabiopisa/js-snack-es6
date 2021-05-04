@@ -15,8 +15,8 @@ $(document).ready(function(){
  ];
 
  const arrCapitalizeStr = arrStr.map((str) => {
-   let singleStr =str.slice(0, 1).toLocaleUpperCase();
-   let restStr =str.slice(1,10000000).toLocaleLowerCase();
+   let singleStr =str.charAt(0).toLocaleUpperCase();
+   let restStr =str.slice(1, str.length).toLocaleLowerCase();
    return str = singleStr +restStr;
  });
  console.log(arrCapitalizeStr);
